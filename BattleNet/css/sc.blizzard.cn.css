@@ -1,0 +1,544 @@
+.header{
+	height: 60px;
+	width: 1899px;
+	background-color: #0b0d12;
+}
+.middle{
+	height: 3805px;
+	width: 1899px;
+    /*background-color: palegoldenrod;*/
+   background-color: black;
+}
+
+a {
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+
+}
+
+ul li a{
+	float: left;
+	padding:10px;
+	color: #00CC00;
+	border-color: deeppink;
+	text-align: center;
+	line-height: 0px;
+	width: 170px;
+	height: 8px;
+	text-align: center;
+	
+}
+#desktop{
+	width: 1880px;
+	height: 40px;
+	float: left;
+	background-color: rgba(0,0,0,0.5);
+}
+#logo{
+	width: 75.06px;
+	height: 60px;
+	display: inline;
+	margin: 10px;
+}
+
+#logo img{
+	width: 75.06px;
+	height: 40px;
+}
+
+#game{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+.games{
+	left: 0;
+    right: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.game-header{
+	z-index: 1;
+    position: relative;
+    width: auto;
+    height: 250px;
+    top: 50px;
+    background: rgba(20,25,34,0.7);
+    display: none;
+}
+.game-nav{
+	text-align: center;
+    font-size: 0;
+    width: 1600px;
+    height: 210px;
+}
+
+.game-nav a{
+	padding: 10px;
+	line-height: 250px;
+	width: 192px;
+	height: 168px;
+}
+
+.game-nav a img{
+	width: 12%;
+	height: 80%;
+}
+
+.game-nav a:hover img{
+	transition: all .5s;
+	box-shadow: 0px 3px 10px white;
+}
+
+#desktop a{
+	color: #B6B6B6;
+	font-size: 20px;
+	display: block;
+	float: left;
+    line-height: 40px;
+	margin: 10px;
+}
+
+#desktop a:hover{
+	color: white;
+}
+
+#store{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+#news{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+#e-sport{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+#account{
+	width: 150px;
+	height: 60px;
+	float: right;
+}
+
+#account a{
+	color: #B6B6B6;
+	font-size: 18px;
+	display: block;
+	float: left;
+    line-height: 40px;
+	margin: 10px;
+}
+
+#suport{
+	width: 34PX;
+	height: 60px;
+	display: inline;
+}
+
+#myAccount{
+	width: 68PX;
+	height: 60px;
+	display: inline;
+}
+.daohang{
+	position: relative;
+	border: double;
+	border-color: #800000;
+	width: 1260px;
+	height:51px;
+	text-align: center;
+	margin: auto;
+	line-height: 51px;
+	border-radius: 7px;
+}
+.bg{
+	
+	/*background-color: pink;*/
+	background-color: black;
+	position: relative;
+	margin: auto;
+}
+.bb{
+	width: 910px;
+	height: 2010px;
+	/*background-color: pink;*/
+	background-color: black;
+	position: relative;
+	margin: auto;
+	border-top: 2px;
+	border-bottom: 2px;
+	border-left:1px;
+	border-right: 1px;
+	padding-top: 75px;
+	padding-bottom: 50px;
+	padding-left: 115px;
+	padding-right: 115px;
+	
+}
+h1{
+	color: #9bf;
+    font-weight: 400;
+    margin-bottom: 30px;
+        line-height: 1;
+        font-size: 30px;
+            font-weight: 700;
+}
+p{
+	    margin-bottom: 1.75rem;
+	        margin-bottom: 30px;
+	            outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+        display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+        font-size: 22px;
+            line-height: 1.75;
+            font-weight: 200;
+            color: rgba(255,255,255,.8);
+}
+.social{
+	width: 1899px;
+	height: 420px;
+	background-color: gold;
+	display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(../img/9k=.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.container{
+	width: 1280px;
+	height: 297px;
+	padding-right: 25px;
+    padding-left: 25px;
+    color: rgba(0,0,0,0);
+        padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+        outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+    box-sizing: border-box;
+        display: block;
+        
+}
+h3{
+	    font-size: 24px;
+	        
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    color: #fff;
+    font-weight: 700;
+        margin-bottom: 20.1px;
+        text-transform: uppercase;
+            display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+        
+}
+h4{
+	font-size: 18px;
+	margin-top: 14px;
+}
+.button1{
+	background: linear-gradient(0deg,rgba(0,51,0,.6) 0,rgba(0,0,0,.6) 100%),linear-gradient(0deg,rgba(0,0,0,.4) 50%,rgba(0,0,0,.3) 50%)!important;
+    background-image: linear-gradient(0deg, rgba(0, 51, 0, 0.6) 0px, rgba(0, 0, 0, 0.6) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.298039) 50%);
+    background-position-x: initial, initial;
+    background-position-y: initial, initial;
+    background-size: auto,1px 2px;
+    background-repeat-x: initial, initial;
+    background-repeat-y: initial, initial;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
+    background-size: auto,1px 2px;
+    border: 1px solid rgba(0,204,0,.6);
+    border-top-color: rgba(0, 204, 0, 0.6);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgba(0, 204, 0, 0.6);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgba(0, 204, 0, 0.6);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 204, 0, 0.6);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    box-shadow: 0 0 20px rgba(0,204,0,.5), inset 0 0 0 1px #000, inset 0 0 0 2px rgba(0,204,0,.5);
+    color: #efc;
+    height: 35px;
+    width: 90px;
+    margin-left: 460px;
+     margin-top: 20px;
+}
+.button2{
+	background: linear-gradient(0deg,rgba(0,51,0,.6) 0,rgba(0,0,0,.6) 100%),linear-gradient(0deg,rgba(0,0,0,.4) 50%,rgba(0,0,0,.3) 50%)!important;
+    background-image: linear-gradient(0deg, rgba(0, 51, 0, 0.6) 0px, rgba(0, 0, 0, 0.6) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.298039) 50%);
+    background-position-x: initial, initial;
+    background-position-y: initial, initial;
+    background-size: auto,1px 2px;
+    background-repeat-x: initial, initial;
+    background-repeat-y: initial, initial;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
+    background-size: auto,1px 2px;
+    border: 1px solid rgba(0,204,0,.6);
+    border-top-color: rgba(0, 204, 0, 0.6);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgba(0, 204, 0, 0.6);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgba(0, 204, 0, 0.6);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 204, 0, 0.6);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    box-shadow: 0 0 20px rgba(0,204,0,.5), inset 0 0 0 1px #000, inset 0 0 0 2px rgba(0,204,0,.5);
+    color: #efc;
+    height: 35px;
+    width: 90px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.button1:hover {
+	
+    border-color: #97E44B;
+        color: #df9;
+    
+}
+.button2:hover {
+	
+    border-color: #97E44B;
+        color: #df9;
+    
+}
+
+.cta{
+	width: 1899px;
+	height: 248px;
+	background-color: goldenrod;
+	display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(../img/blue.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.container1{
+	width: 1280px;
+	height: 157px;
+	padding-right: 25px;
+    padding-left: 25px;
+    color: rgba(0,0,0,0);
+        padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+        outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+    box-sizing: border-box;
+        display: block;
+}
+h2{
+	  
+	            color: #9bf;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+    font-weight: 700;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+            display: block;
+    font-size: 1.7em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+        
+}
+.visted{
+	    color: #cf6;
+}
+h2 .visted:hover{
+	  color: mediumpurple;
+}
+.footer{
+	position: absolute;
+	background-color: black;
+	width: 1899px;
+	height: 411px;
+	top: 3870px;
+}
+
+.navfooter{
+	position: relative;
+	width: 1899px;
+	height: 374px;	
+	box-sizing: border-box;
+    vertical-align: baseline;
+	display: table-cell;
+	text-align: center;
+}
+
+.footer-logo{
+	position: absolute;
+	width: 1899px;
+	height: 66px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+}
+
+.foot-link{
+	position: relative;
+	margin: 15px 0;
+}
+
+.workchance{
+	position: relative;
+	top: 106px;
+	font-size: 17px;
+	display: inline;
+	padding: 10px;
+}
+
+.workchance a{
+    color: #B6B6B6;
+}
+
+.workchance a:hover{
+	color: white;
+}
+
+.copyright{
+	position: relative;
+	top: 106px;
+	color: #414839;
+	font-size: 13px;
+}
+
+.privacy{
+	position: relative;
+	top: 106px;
+	font-size: 13px;
+	display: inline;
+	padding: 7px;
+}
+
+.privacy a{
+	color: #B6B6B6;
+}
+
+.privacy a:hover{
+	color: white;
+}
+
+.number{
+	position: relative;
+	top: 106px;
+	font-size: 13px;
+	padding: 5px;
+	display: inline;
+}
+
+.number a{
+	color: #414839;
+}
+
+.number a:hover{
+	color: white;
+}
+
+.addition{
+	position: relative;
+	top: 104px;
+	color: #414839;
+	font-size: 13px;
+	display: inline;
+}
+
+.age{
+	position: relative;
+	top: 100px;
+	font-size: 13px;
+	padding: 5px;
+	display: inline;
+}
+
+.age a{
+	color: #B6B6B6;
+}
+
+.age a:hover{
+	color: white;
+}
+
+.addresscontent{
+	position: relative;
+	top: 96px;
+	color: #414839;
+	font-size: 13px;
+	display: inline;
+	padding: 5px;
+}
+
+.legalPicture{
+	position: relative;
+	top: 104px;
+	display: inline;
+	padding: 5px;
+}
+
+.legalPicture a img{
+	width: 26px;
+	height: 26px;
+}
+
+.addiction{
+	position: relative;
+	top: 104px;
+	color: #414839;
+	font-size: 13px;
+}

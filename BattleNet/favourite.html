@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>不想遇见的三个角色</title>
+
+<link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<link rel="stylesheet" href="css/animate.css">
+<style type="text/css">
+html,
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+
+[data-animation] {
+	opacity: 0;
+}
+
+[data-animation].animated {
+	opacity: 1;
+}
+
+#hero {
+	background: radial-gradient(circle at 50% center, #dee294 0%, #b7bd32 70%);
+	height: 100vh;
+	text-align: center;
+}
+
+#hero h1 small {
+	font-size: 50%;
+}
+
+.table-wrap {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#lower {
+	background: radial-gradient(circle at 50% center, #f0c916 0%, #ccad1a 70%);
+	overflow: hidden;
+	text-align: center;
+	min-height: 600px;
+	padding: 150px 0;
+}
+
+#lower img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+</style>
+
+</head>
+<body>
+
+<section id="hero">
+
+	<div class="table-wrap">
+		<div class="table-cell">
+			<h1 class="heading" data-animation="fadeInUp">
+				请向下滚动 <br>
+			</h1>
+		</div>
+	</div>
+
+</section>
+
+<section id="lower" data-animation-container>
+
+	<h1 data-animation="fadeIn" data-animation-child>
+		surprise motherfucker!
+	</h1>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-4" data-animation-child data-animation="fadeInUp" data-animation-delay="500ms">
+				<img src="img/ii/4.jpg" alt="" class="img-responsive center-block">
+			</div>
+			<div class="col-sm-4" data-animation-child data-animation="fadeInUp" data-animation-delay="1500ms">
+				<img src="img/ii/5.jpg" alt="" class="img-responsive center-block">
+			</div>
+			<div class="col-sm-4" data-animation-child data-animation="fadeInUp" data-animation-delay="2500ms">
+				<img src="img/ii/6.jpg" alt="" class="img-responsive center-block">
+			</div>
+
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+
+</section>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollAnimations.min.js"></script>
+<script type="text/javascript">
+(function(){
+	var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+	$containers.scrollAnimations();
+}());
+</script>
+
+
+</div>
+</body>
+</html>

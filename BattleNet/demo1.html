@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>魔兽世界</title>
+		<style>
+			*{
+				margin: 0;
+			}
+			.body {
+				width:100%;
+				min-height: auto;
+				/*background: orange;*/
+				background-image: url(img/dbg.jpg);
+			}
+			.video{
+				width: 100%;
+				height: 988.233px;
+				/*background: purple;*/
+				background-image: url(img/vid.jpg);
+			}
+			.head-container{
+				width: 100%;
+				height: 40px;
+				background: black;
+			}
+			.head-container .baoxue{
+				width: 61.81px;
+				height: 40px;
+				margin-left: 30px;
+				float: left;
+				position: relative;
+			}
+			.head-container .baoxue img{
+				width: 100%;
+				height: 100%;
+			}
+			.head-container .biaoti{
+				width: 600px;
+				height: 40px;
+				text-align: center;
+				margin-left: 118px;
+			}
+			.head-container .biaoti ul li{
+				list-style: none;
+				text-align: center;
+				color: white;
+				font-size: 15px;
+				float: left;
+				cursor: pointer;
+				line-height: 15px;
+			}
+			.head-container .biaoti ul li a{
+				display: block;
+				color: white;
+				text-decoration: none;
+			}
+			.head-container .biaoti ul li .showyx{
+				width: 100%;
+				height: 250px;
+				background-color: rgba(100,98,65,.5);
+				position: absolute;
+				left: 0px;
+				display: none;
+			}
+			.head-container .biaoti ul li:hover .showyx{
+				display: block;
+			}
+			.msinfo{
+				width: 100%;
+				height: 130px;
+				/*background: pink;*/
+				position: relative;
+				float: left;
+			}
+			.msinfo .mslogo{
+				width: 293px;
+				height: 118px;
+				background-image: url(img/moshoulogotu.png);
+				background-size: 100%;
+				position: relative;
+				top: 12px;
+				left: 600px;
+				float: left;
+			}
+			.space1{
+				width: 100%;
+				height: 160px;
+				/*background: gray;*/
+			}
+			.dazi{
+				width: 100%;
+				height: 262.733px;
+				/*background: palegreen;*/
+			}
+			.dazi .dazi_biaoti{
+				width: 100%;
+				height: 77.4px;
+				font-size: 51.6px;
+				color: white;
+			}
+			.dazi .dazi_space{
+				width: 100%;
+				height: 24px;
+			}
+			.dazi .dazi_js{
+				width: 800px;
+				height: 62.2px;
+				font-size: 20.7333px;
+				font-weight: 400;
+				color: white;
+			}
+			.dazi .dazi_space2{
+				width: 50%;
+				height: 36px;
+			}
+			.dazi .dazi_button{
+				width: 100%;
+				height: 73.1333px;
+			}
+			.dazi .dazi_button .button1{
+				width: 176.8px;
+				height:51.5333px;
+				background: rgba(0,0,0,.4);
+				float: left;
+				margin-left: 50px;
+				cursor: pointer;
+			}
+			.dazi .dazi_button .button1:hover{
+				background-color: rgba(199, 126, 25,.8);
+			}
+			.dazi .dazi_button .button2{
+				width: 176.8px;
+				height:51.5333px;
+				background-color: rgba(159,22,0,.6);
+				float: left;
+				margin-left: 50px;
+				cursor: pointer;
+			}
+			.dazi .dazi_button .button2:hover{
+				background-color: rgba(159,22,0,.8);
+			}
+			.dazi .dazi_button .button3{
+				width: 176.8px;
+				height:51.5333px;
+				float: left;
+				background-color: rgba(159,22,0,.6);
+				margin-left: 50px;
+				cursor: pointer;
+			}
+			.dazi .dazi_button .button3:hover{
+				background-color: rgba(159,22,0,.8);
+			}
+			.dazi .dazi_button .button1 .button1-label{
+				width: 116.8px;
+				height: 25.9333px;
+				color: rgb(255, 211, 107);
+				text-align: center;
+				line-height: 25.9333px;
+				margin-left: 30px;
+				margin-top: 10px;
+				font-size: 17.2833px;
+			}
+			.dazi .dazi_button .button2 .button2-label{
+				width: 116.8px;
+				height: 25.9333px;
+				color: rgb(255, 211, 107);
+				font-size: 17.2833px;
+				text-align: center;
+				line-height: 25.9333px;
+                margin-left: 30px;
+				margin-top: 10px;
+				
+			}
+			.dazi .dazi_button .button3 .button3-label{
+				width: 116.8px;
+				height: 25.9333px;
+				color: rgb(255, 211, 107);
+				font-size: 17.2833px;
+				text-align: center;
+				line-height: 25.9333px;
+				margin-left: 30px;
+				margin-top: 10px;
+			}
+			.space2{
+				width: 100%;
+				height: 160px;
+				/*background: blue;*/
+			}
+			.xinwen1{
+				width: 25%;
+				height: 215.5px;
+				/*background: brown;*/
+				float: left;
+			}
+			.xinwen1 .xwt1{
+				width: 354.8px;
+				height: 199.567px;
+				background-image: url(img/xw1.png);
+				background-size: 100%;
+				margin-top: 7.5px;
+				margin-left: 10px;
+				float: left;
+				border: 1px #ccc solid;
+				cursor: pointer;
+			}
+			.xinwen1 .xwt1:hover{
+				border-color: orange;
+			}
+			.xinwen1 .xwt1 .xwt1-w{
+				width: 354.8px;
+				height: 84px;
+				/*background: blue;*/
+				margin-top: 116px;
+				font-size: 18px;
+				line-height: 40.6px;
+				color: orange;
+			}
+			.xinwen2{
+				width: 25%;
+				height: 215.5px;
+				/*background: white;*/
+				float: left;
+			}
+			.xinwen2 .xwt2{
+				width: 354.8px;
+				height: 199.567px;
+				background-image: url(img/xw2.jpg);
+				background-size: 100%;
+				margin-top: 7.5px;
+				margin-left: 10px;
+				float: left;
+				border: 1px #ccc solid;
+				cursor: pointer;
+			}
+			.xinwen2 .xwt2:hover{
+				border-color: orange;
+			}
+			.xinwen2 .xwt2 .xwt2-w{
+				width: 354.8px;
+				height: 84px;
+				/*background: blue;*/
+				margin-top: 116px;
+				font-size: 18px;
+				line-height: 40.6px;
+				color: orange;
+			}
+			.xinwen3{
+				width: 25%;
+				height: 215.5px;
+				/*background: brown;*/
+				float: left;
+			}
+			.xinwen3 .xwt3{
+				width: 354.8px;
+				height: 199.567px;
+				background-image: url(img/xw3.jpg);
+				background-size: 100%;
+				margin-top: 7.5px;
+				margin-left: 10px;
+				float: left;
+				border: 1px #ccc solid;
+				cursor: pointer;
+			}
+			.xinwen3 .xwt3:hover{
+				border-color: orange;
+			}
+			.xinwen3 .xwt3 .xwt3-w{
+				width: 354.8px;
+				height: 84px;
+				/*background: blue;*/
+				margin-top: 116px;
+				font-size: 18px;
+				line-height: 40.6px;
+				color: orange;
+			}
+			.xinwen4{
+				width: 25%;
+				height: 215.5px;
+				/*background: khaki;*/
+				float: left;
+			}
+			.xinwen4 .xwt4{
+				width: 354.8px;
+				height: 199.567px;
+				background-image: url(img/xw4.jpg);
+				background-size: 100%;
+				margin-top: 7.5px;
+				margin-left: 10px;
+				float: left;
+				border: 1px #ccc solid;
+				cursor: pointer;
+			}
+			.xinwen4 .xwt4:hover{
+				border-color: orange;
+			}
+			.xinwen4 .xwt4 .xwt4-w{
+				width: 354.8px;
+				height: 84px;
+				/*background: blue;*/
+				margin-top: 116px;
+				font-size: 18px;
+				line-height: 40.6px;
+				color: orange;
+			}
+			.asl{
+				width: 100%;
+				height: 569.7px;
+				/*background: white;*/
+				background-image: url(img/asl.jpg);
+				margin-top: 2px;
+				position: relative;
+			}
+			.asl .aslbiaoti{
+				width: 1215.37px;
+				height: 77.4px;
+				color: white;
+				font-size: 51.6px;
+				position: relative;
+				top: 80px;
+			}
+			.asl .aslnr{
+				width: 607.683px;
+				height: 77.8px;
+				/*background: red;*/
+				font-size: 17.2833px;
+				color: white;
+				margin-top: 30px;
+				position: relative;
+				top: 80px;
+			}
+			.asl .aslbutton{
+				width: 627.683px;
+				height: 73.1333px;
+				/*background: hotpink;*/
+				position: relative;
+				top: 80px;
+			}
+			.asl .aslbutton .aslbuttoninner{
+				width: 176.8px;
+				height: 49.9333px;
+				background-color: rgba(0,0,0,.4);
+				border: 1px solid #c77e19;
+				margin-top: 30px;
+				margin-left: 30px;
+				cursor: pointer;
+				
+			}
+			.asl .aslbutton .aslbuttoninner .aslbuttonlabel{
+				width: 116.8px;
+				height: 25.9333px;
+				/*background: red;*/
+				text-align: center;
+				margin-top: 12px;
+				margin-left: 30px;
+				color: rgb(255, 211, 107);
+			}
+			.asl .aslbutton .aslbuttoninner:hover{
+				background-color: rgb(247, 177, 10)
+			}
+			.sczn{
+				width: 100%;
+				height: 455.75px;
+				/*background: aqua;*/
+				background-image: url(img/sczn.jpg);
+				margin-top: 2px;
+				position: relative;
+			}
+			.sczn .scznbiaoti{
+				width: 1215.37px;
+				height: 77.4px;
+				color: white;
+				font-size: 51.6px;
+				top: 80px;
+				position: relative;
+			}
+			.sczn .scznnr{
+				width: 607.683px;
+				height: 77.8px;
+				/*background: red;*/
+				font-size: 17.2833px;
+				color: white;
+				margin-top: 30px;
+				position: relative;
+				top: 80px;
+			}
+			.sczn .scznbutton{
+				width: 627.683px;
+				height: 73.1333px;
+				/*background: hotpink;*/
+				position: relative;
+				top: 80px;
+			}
+			.sczn .scznbutton .scznbuttoninner{
+				width: 176.8px;
+				height: 49.9333px;
+				background-color: rgba(0,0,0,.4);
+				border: 1px solid #c77e19;
+				margin-top: 30px;
+				margin-left: 30px;
+				cursor: pointer;
+				
+			}
+			.sczn .scznbutton .scznbuttoninner .scznbuttonlabel{
+				width: 116.8px;
+				height: 25.9333px;
+				/*background: red;*/
+				text-align: center;
+				margin-top: 12px;
+				margin-left: 30px;
+				color: rgb(255, 211, 107);
+			}
+			.sczn .scznbutton .scznbuttoninner:hover{
+				background-color: rgb(247, 177, 10)
+			}
+			.tmzz{
+				width: 100%;
+				height: 455.75px;
+				/*background: navajowhite;*/
+				background-image: url(img/tmzz.jpg);
+				margin-top: 2px;
+			}
+			.tmzz .tmzzbiaoti{
+				width: 1215.37px;
+				height: 77.4px;
+				color: white;
+				font-size: 51.6px;
+				top: 80px;
+				position: relative;
+			}
+			.tmzz .tmzznr{
+				width: 607.683px;
+				height: 77.8px;
+				/*background: red;*/
+				font-size: 17.2833px;
+				color: white;
+				margin-top: 30px;
+				position: relative;
+				top: 80px;
+			}
+			.tmzz .tmzzbutton{
+				width: 627.683px;
+				height: 73.1333px;
+				/*background: hotpink;*/
+				position: relative;
+				top: 80px;
+			}
+			.tmzz .tmzzbutton .tmzzbuttoninner{
+				width: 176.8px;
+				height: 49.9333px;
+				background-color: rgba(0,0,0,.4);
+				border: 1px solid #c77e19;
+				margin-top: 30px;
+				margin-left: 30px;
+				cursor: pointer;
+				
+			}
+			.tmzz .tmzzbutton .tmzzbuttoninner .tmzzbuttonlabel{
+				width: 116.8px;
+				height: 25.9333px;
+				/*background: red;*/
+				text-align: center;
+				margin-top: 12px;
+				margin-left: 30px;
+				color: rgb(255, 211, 107);
+			}
+			.tmzz .tmzzbutton .tmzzbuttoninner:hover{
+				background-color: rgb(247, 177, 10)
+			}
+			.kcdh{
+				width: 100%;
+				height: 455.75px;
+				/*background: dimgray*/
+				background-image: url(img/kcdh.jpg);
+				background-repeat: no-repeat;
+				margin-top: 2px;
+				
+			}
+			.kcdh .kcdhbiaoti{
+				width: 1215.37px;
+				height: 77.4px;
+				color: white;
+				font-size: 51.6px;
+				top: 80px;
+				position: relative;
+			}
+			.kcdh .kcdhnr{
+				width: 607.683px;
+				height: 77.8px;
+				/*background: red;*/
+				font-size: 17.2833px;
+				color: white;
+				margin-top: 30px;
+				position: relative;
+				top: 80px;
+			}
+			.kcdh .kcdhbutton{
+				width: 627.683px;
+				height: 73.1333px;
+				/*background: hotpink;*/
+				position: relative;
+				top: 80px;
+			}
+			.kcdh .kcdhbutton .kcdhbuttoninner{
+				width: 176.8px;
+				height: 49.9333px;
+				background-color: rgba(0,0,0,.4);
+				border: 1px solid #c77e19;
+				margin-top: 30px;
+				margin-left: 30px;
+				cursor: pointer;
+				
+			}
+			.kcdh .kcdhbutton .kcdhbuttoninner .kcdhbuttonlabel{
+				width: 116.8px;
+				height: 25.9333px;
+				/*background: red;*/
+				text-align: center;
+				margin-top: 12px;
+				margin-left: 30px;
+				color: rgb(255, 211, 107);
+			}
+			.kcdh .kcdhbutton .kcdhbuttoninner:hover{
+				background-color: rgb(247, 177, 10)
+			}
+			.rm{
+				width: 49%;
+				height: 495px;
+				/*background: brown;*/
+				float: left;
+				border: 1px #ccc solid;
+			}
+			.rm .rmtu{
+				width: 100%;
+				height: 371.8px;
+				margin: 2px;
+			}
+			.rm .rmtu img{
+				width: 100%;
+				height: 100%;
+			}
+			.rm .rmwz{
+				width: 100%;
+				height: 123.2px;
+				background-image: url(img/navbg.jpg);
+				text-align: center;
+				line-height: 50px;
+			}
+			.rm:hover{
+				border-color: orange;
+			}
+			.hg{
+				width: 49%;
+				height: 495px;
+				/*background: gold;*/
+				float: left;
+				border: 1px #ccc solid;
+			}
+			.hg .hgtu{
+				width: 100%;
+				height: 371.8px;
+				margin: 2px;
+			}
+			.hg .hgtu img{
+				width: 100%;
+				height: 100%;
+			}
+			.hg .hgwz{
+				width: 100%;
+				height: 123.2px;
+				background-image: url(img/navbg.jpg);
+				text-align: center;
+				line-height: 50px;
+			}
+			.hg:hover{
+				border-color: orange;
+			}
+			.sm{
+				width: 49%;
+				height: 495px;
+				/*background: white;*/
+				float: left;
+				border: 1px #ccc solid;
+			}
+			.sm .smtu{
+				width: 100%;
+				height: 371.8px;
+				margin: 2px;
+			}
+			.sm .smtu img{
+				width: 100%;
+				height: 100%;
+			}
+			.sm .smwz{
+				width: 100%;
+				height: 123.2px;
+				background-image: url(img/navbg.jpg);
+				text-align: center;
+				line-height: 50px;
+			}
+			.sm:hover{
+				border-color: orange;
+			}
+			.xz{
+				width: 49%;
+				height: 495px;
+				/*background: paleturquoise;*/
+				float: left;
+				border: 1px #ccc solid;
+			}
+			.xz .xztu{
+				width: 100%;
+				height: 371.8px;
+				margin: 2px;
+			}
+			.xz .xztu img{
+				width: 100%;
+				height: 100%;
+			}
+			.xz .xzwz{
+				width: 100%;
+				height: 123.2px;
+				background-image: url(img/navbg.jpg);
+				text-align: center;
+				line-height: 50px;
+			}
+			.xz:hover{
+				border-color: orange;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="body">
+			<div class="video">
+				<div class="head-container">
+					<div class="baoxue">
+						<img src="img/baoxue.jpg" />
+					</div>
+					<div class="biaoti">
+						<ul>
+							<li><a href="#"><br/>游戏&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								<div class="showyx">
+								</div>
+							</li>
+							<li><br/>商城&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li><br/>新闻&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li><br/>电子竞技</li>
+						</ul>
+					</div>
+				</div>
+			    <div class="msinfo">
+			    	<div class="mslogo"></div>
+			    </div>
+			    <div class="space1"></div>
+			    <div class="dazi">
+			    	<div class="dazi_biaoti"><b>&nbsp;&nbsp;&nbsp;&nbsp;&laquo;争霸艾泽拉斯&raquo;&nbsp;&nbsp;现已全球同步上线测试</b></div>
+			    	<div class="dazi_space"></div>
+			    	<div class="dazi_js">&nbsp;&nbsp;&nbsp;&nbsp;&laquo;争霸艾泽拉斯&raquo;的史诗故事翻开新的篇章。探索即将登场的全新功能、玩法、剧情，以及更多内容！</div>
+			    	<div class="dazi_space2"></div>
+			    	<div class="dazi_button">
+			    		<div class="button1">
+			    			<div class="button1-label">了解更多</div>
+			    		</div>
+			    		<div class="button2">
+			    			<div class="button2-label">免费注册</div>
+			    		</div>
+			    		<div class="button3">
+			    			<div class="button3-label">下载客户端</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="space2"></div>
+			    <div class="xinwen1">
+			    	<div class="xwt1">
+			    		<div class="xwt1-w"><br/><b>征战之门已经大开，新的挑战正等你来！</b></div>
+			    	</div>
+			    </div>
+			    <div class="xinwen2">
+			    	<div class="xwt2">
+			    		<div class="xwt2-w"><br/><b>全新同盟种族整装待发！</b></div>
+			    	</div>
+			    </div>
+			    <div class="xinwen3">
+			    	<div class="xwt3">
+			    		<div class="xwt3-w"><br/><b>魔兽世界在线修正</b></div>
+			    	</div>
+			    </div>
+			    <div class="xinwen4">
+			    	<div class="xwt4">
+			    		<div class="xwt4-w"><br/><b>观看艾萨拉动画短片</b></div>
+			    	</div>
+			    </div>
+			</div>
+			<div class="asl">
+				<div class="aslbiaoti"><b>&laquo;战争使者：艾萨拉&raquo;</b></div>
+				<div class="aslnr"><p></p><i>一万年前，大分裂使艾泽拉斯的土地分崩离析。大陆裂开，海水涌入，上层精灵</i><br/>
+					<i>以及他们的女王艾萨拉都无法逃离葬身海底的命运。可是，她在深渊之中，发现</i><br />
+					<i>的并不是湮灭……而是机遇。</i>
+				</div>
+				<div class="aslbutton">
+					<div class="aslbuttoninner">
+						<div class="aslbuttonlabel">立即观看</div>
+					</div>
+				</div>
+			</div>
+			<div class="sczn">
+				<div class="scznbiaoti"><b>生存指南</b></div>
+				<div class="scznnr">了解即将到来的全新内容，包括游戏系统更新、全新任务线、战争模式，以及更<br/>多精彩内容！</div>
+				<div class="scznbutton">
+					<div class="scznbuttoninner">
+						<div class="scznbuttonlabel">立即观看</div>
+					</div>
+				</div>
+			</div>
+			<div class="tmzz">
+				<div class="tmzzbiaoti"><b>同盟种族</b></div>
+				<div class="tmzznr">解锁全新的种族，其中包括光铸德莱尼、至高岭牛头人等。</div>
+				<div class="tmzzbutton">
+					<div class="tmzzbuttoninner">
+						<div class="tmzzbuttonlabel">了解更多</div>
+					</div>
+				</div>
+			</div>
+			<div class="kcdh">
+				<div class="kcdhbiaoti"><b>&laquo;争霸艾泽拉斯&raquo;开场动画</b></div>
+				<div class="kcdhnr">史诗即将展开崭新的篇章，联盟和部落已全面开战。观看开场动画，感受激战豪情！</div>
+				<div class="kcdhbutton">
+					<div class="kcdhbuttoninner">
+						<div class="kcdhbuttonlabel">观看动画</div>
+					</div>
+				</div>
+			</div>
+			<div class="rm">
+				<div class="rmtu">
+					<img src="img/rm.jpg"/>
+				</div>
+				<div class="rmwz">
+					<p><font size="3" color="white" >魔兽世界是什么？</font></p>
+					<p><font size="6" color="orange"><b>新玩家入门</b></font></p>
+				</div>
+			</div>
+			<div class="hg">
+				<div class="hgtu">
+					<img src="img/hg.jpg" />
+				</div>
+				<div class="hgwz">
+					<p><font size="3" color="white" >艾泽拉斯需要你</font></p>
+					<p><font size="6" color="orange"><b>老玩家回归</b></font></p>
+				</div>
+			</div>
+			<div class="sm">
+				<div class="smtu">
+					<img src="img/sm.jpg" />
+				</div>
+				<div class="smwz">
+					<p><font size="3" color="white" >争霸艾泽拉斯</font></p>
+					<p><font size="6" color="orange"><b>更新说明</b></font></p>
+				</div>
+			</div>
+			<div class="xz">
+				<div class="xztu">
+					<img src="img/xz.jpg">
+				</div>
+				<div class="xzwz">
+					<p><font size="3" color="white" >最近更新</font></p>
+					<p><font size="6" color="orange"><b>在线修正</b></font></p>
+				</div>
+			</div>
+	    </div>
+	</body>
+</html>

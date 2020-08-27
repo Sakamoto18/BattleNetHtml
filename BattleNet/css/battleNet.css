@@ -1,0 +1,663 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{  
+	outline: none;
+	text-decoration: none;
+}
+
+body *{
+    text-transform: none;
+    letter-spacing: 0px;
+    font-family: 微软雅黑, "Microsoft YaHei", Helvetica, Tahoma, StSun, 宋体, SimSun, sans-serif;
+    font-style: normal;
+}
+
+div{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/**
+ * 头部
+ */
+.container{
+	position: absolute;
+	/*background-color: green;*/
+	height: 519px;
+	width: 1899px;
+	background: url(../img/bg-top.jpg);
+}
+
+#header{
+	position: relative;
+    width: 1280px;
+    height: 459px;
+    margin: auto;	
+    
+}
+
+#header #battlelogo a img{
+	position: absolute;
+	margin-top: 50px;
+	width: 402px;
+	height: 92px;
+	left: -15px;
+}
+
+#section{
+	position: relative;
+	top: 152px;
+	width: 1280px;
+	height: 307px;
+	/*background: paleturquoise;*/
+}
+
+#welcome-info{
+	width: 1280;
+	height: 50px;
+	padding: 40px 22px 10px;
+	/*background: red;*/
+}
+
+#welcome-left{
+	position: absolute;
+	width: 670px;
+	height: 143px;
+	left: 0px;
+	
+	float: left;
+	
+	/*background: red;*/
+}
+
+#welcome-right{
+	margin-top: -45px;
+    margin-right: -15px;
+    float: right;
+    color: #a2b9c2;
+    text-align: center;
+    padding-top: 10px;
+    margin-right:0px ;
+    
+    
+}
+
+#app-screem{
+	width: 256px;
+	height: 192px;
+	background:url(../img/app-screen-small.png) 0 0 no-repeat ;
+	
+}
+
+
+
+
+
+ #welcome-right .text {
+    width: 256px;
+    margin-top: -40px;
+    height: 21px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #00B6FF;
+    
+}
+
+#welcome-right :hover .text{
+	color: white;
+}
+
+#welcome-left .button{
+	font-size: 12px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    line-height: 18px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 3px;
+    height: 18px;
+    box-shadow: 0 0 4px 2px #202325;
+    background: #0081b4;
+    background: -moz-linear-gradient(top, #0081b4 0%, #006a9b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0081b4), color-stop(100%,#006a9b));
+    background: -webkit-linear-gradient(top, #0081b4 0%,#006a9b 100%);
+    background: -o-linear-gradient(top, #0081b4 0%,#006a9b 100%);
+    background: -ms-linear-gradient(top, #0081b4 0%,#006a9b 100%);
+    background: linear-gradient(top, #0081b4 0%,#006a9b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081b4', endColorstr='#006a9b',GradientType=0 );
+}
+
+#welcome-left .button:hover{
+	background: #008DC5;
+}
+
+#welcome-left #login{
+	position: relative;
+	color: #00B6FF;
+	 font-size: 14px;
+}
+
+#welcome-left #login:hover{
+	color: white;
+}
+
+#welcome-left h2 #learn-more{
+	position: relative;
+	font-weight: normal;
+	font-size: 25px;
+    color: #a2b9c2;
+    padding-right: 16px;
+    margin-left: 0px;
+}
+
+#welcome-left h2 #learn-more:hover {
+	color: white;
+}
+
+#learn-more span{
+	color: #566b73;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #3a4c53;
+    position: relative;
+    top: -5px;
+    height: 21px;
+    line-height: 21px;
+    padding: 2px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#welcome-left h2 #learn-more:hover span{
+	background-color: #3A4C53;
+	color: #93BDCE;
+}
+
+/**
+ * 头部导航
+ * 
+ */
+#desktop{
+	width: 1880px;
+	height: 60px;
+	float: left;
+	
+	background-color: rgba(0,0,0,0.5);
+}
+
+#topContent{
+	position: relative;
+	width: 1600px;
+	height: 60px;
+	left: 140px;
+
+}
+
+#logo{
+	width: 75.06px;
+	height: 60px;
+	display: inline;
+	margin: 10px;
+}
+
+#logo img{
+	width: 75.06px;
+	height: 40px;
+}
+
+#game{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+.games{
+	left: 0;
+    right: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.game-container{
+	z-index: 1;
+    position: relative;
+    width: auto;
+    height: 250px;
+    top: 60px;
+    background: rgba(20,25,34,0.9);
+    display: none;
+}
+
+.is-center{
+	position: relative;
+	margin: auto;
+	width: 1600px;
+	height: 250px;
+	
+}
+
+.clounms8{
+	position: relative;
+	width: 1500px;
+	height: 250px;
+	top: 40px;
+	
+}
+
+.game-nav{
+	text-align: center;
+    font-size: 16px;
+    width: 1600px;
+    height: 210px;
+    
+}
+
+.game-nav a{
+	;
+	color: #B6B6B6;
+	padding: 10px;
+	
+	
+}
+
+.game-nav a img{
+	width: 12%;
+	height: 80%;
+	border-radius:10px ;
+}
+
+.game-nav a:hover img{
+	transition: all .5s;
+	box-shadow: 0px 3px 7px white;
+}
+
+.user-login{
+	display: none;
+}
+
+.account-container{
+	position: absolute;
+	width: 320px;
+	height: 168px;
+	top: 60px;
+	float: right;
+	right: 120px;
+	background: #1D2430;
+}
+
+.are-center{
+	width: 320px;
+	height: 167px;
+	display: table-cell;
+	text-align: center;
+}
+
+.loginbtn{
+	
+	width: 320px;
+	height: 78px;
+	/*background: blue;*/
+	line-height: 78px;
+
+}
+
+.login-button{
+	display: inline-block;
+    position: relative;
+    background-color: #0e86ca;
+    border: solid 1px #00aeff;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    overflow: visible;
+    width: 278px;
+    max-width: 100%;
+    transition: color 200ms, background-color 200ms, border-color 200ms;
+}
+
+.login-button:hover{
+    background-color: #01ABFB;
+}
+
+.account{
+	float: left;
+	display: inline;
+	color: #B6B6B6;
+	height: 21px;
+	padding-left: 25px;
+}
+
+.account:hover{
+	color: white;
+}
+
+.regandlogin{
+	width: 320px;
+	height: 44px;
+	font-size: 17px;
+	line-height: 44px;
+	display: block;
+	float: left;
+}
+
+#desktop a{
+	color: #B6B6B6;
+	font-size: 20px;
+	display: block;
+	float: left;
+    line-height: 40px;
+	margin: 10px;
+}
+
+#desktop a:hover{
+	color: white;
+}
+
+#store{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+#news{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+#e-sport{
+	width: 40PX;
+	height: 60px;
+	display: inline;
+}
+
+#account{
+	width: 150px;
+	height: 60px;
+	float: right;
+}
+
+#account a{
+	color: #B6B6B6;
+	font-size: 18px;
+	display: block;
+	float: left;
+    line-height: 40px;
+	margin: 10px;
+}
+
+#suport{
+	width: 34PX;
+	height: 60px;
+	display: inline;
+}
+
+#myAccount{
+	width: 68PX;
+	height: 60px;
+	display: inline;
+}
+
+/**
+ * 中间游戏部分
+ */
+.body{
+	position: absolute;
+	background: #d3d1ce url(../images/layout/bg-middle.jpg) top center repeat-x;
+	width: 1899px;
+	height: 409px;
+	top: 519px;
+}
+
+.wapper{
+	width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#content{
+	    padding: 15px 0;
+}
+
+.game-tip{
+	width: 162px;
+	height: 394px;
+	line-height: 3.6;
+    text-align: center;
+    font-size: 14px;
+}
+
+.Gameimage{
+	position: relative;
+	width: 1280px;
+	height: 375px;
+	margin: auto;
+	
+	display: table-cell;
+	text-align: center;
+	
+}
+
+#content .Gameimage .game-cloumn .game-pro{
+	position: absolute;
+	background:  0 0 no-repeat;
+	color: #B6B6B6;
+	top: -80px;
+}
+
+#content .Gameimage .game-cloumn .game-tip{
+	line-height: 3.6;
+    text-align: center;
+    font-size: 14px;
+	
+}
+
+#content .Gameimage .game-cloumn .game-tip:hover{
+	color: white;
+}
+
+/**
+ * 暗黑三
+ */
+#content .Gameimage #d3 .game-pro{
+	left: 182px;
+
+}
+/**
+ * 星际二
+ */
+#content .Gameimage #sc2 .game-pro{
+	left: 364px;
+
+}
+/**
+ * 星际重置
+ */
+#content .Gameimage #starcraft .game-pro{
+	left: 544px;
+
+}
+/**
+ * 风暴英雄
+ */
+#content .Gameimage #heros .game-pro{
+	left: 726px;
+	
+}
+/**
+ * 炉石传说
+ */
+#content .Gameimage #hs .game-pro{
+	left: 908px;
+	
+}
+/**
+ * 守望先锋
+ */
+#content .Gameimage #overwatch .game-pro{
+	left: 1090px;
+
+}
+
+#content{
+	min-height: 350px;
+}
+
+
+
+/**
+ * 底部
+ */
+.foot{
+	position: absolute;
+	background-color: black;
+	width: 1899px;
+	height: 374px;
+	top: 928px;
+}
+
+.navfooter{
+	position: relative;
+	width: 1899px;
+	height: 374px;	
+	box-sizing: border-box;
+    vertical-align: baseline;
+	display: table-cell;
+	text-align: center;
+}
+
+.footer-logo{
+	position: absolute;
+	width: 1899px;
+	height: 66px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+}
+
+.foot-link{
+	position: relative;
+	margin: 15px 0;
+}
+
+.workchance{
+	position: relative;
+	top: 106px;
+	font-size: 17px;
+	display: inline;
+	padding: 10px;
+}
+
+.workchance a{
+    color: #B6B6B6;
+}
+
+.workchance a:hover{
+	color: white;
+}
+
+.copyright{
+	position: relative;
+	top: 106px;
+	color: #414839;
+	font-size: 13px;
+}
+
+.privacy{
+	position: relative;
+	top: 106px;
+	font-size: 13px;
+	display: inline;
+	padding: 7px;
+}
+
+.privacy a{
+	color: #B6B6B6;
+}
+
+.privacy a:hover{
+	color: white;
+}
+
+.number{
+	position: relative;
+	top: 106px;
+	font-size: 13px;
+	padding: 5px;
+	display: inline;
+}
+
+.number a{
+	color: #414839;
+}
+
+.number a:hover{
+	color: white;
+}
+
+.addition{
+	position: relative;
+	top: 104px;
+	color: #414839;
+	font-size: 13px;
+	display: inline;
+}
+
+.age{
+	position: relative;
+	top: 100px;
+	font-size: 13px;
+	padding: 5px;
+	display: inline;
+}
+
+.age a{
+	color: #B6B6B6;
+}
+
+.age a:hover{
+	color: white;
+}
+
+.addresscontent{
+	position: relative;
+	top: 96px;
+	color: #414839;
+	font-size: 13px;
+	display: inline;
+	padding: 5px;
+}
+
+.legalPicture{
+	position: relative;
+	top: 104px;
+	display: inline;
+	padding: 5px;
+}
+
+.legalPicture a img{
+	width: 26px;
+	height: 26px;
+}
+
+.addiction{
+	position: relative;
+	top: 104px;
+	color: #414839;
+	font-size: 13px;
+}

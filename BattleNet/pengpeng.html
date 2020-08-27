@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>全新扩展包已上线</title>
+		<link rel="stylesheet" href="css/pengpeng.css" />
+		<style>
+			a {
+				text-decoration: none;
+			}
+		</style>
+		<script>
+			var nowShow = 1;
+
+			function showT(index) {
+
+				if(Number(index)) {
+					nowShow = index;
+					clearTimeout(sid);
+					nowShow = index;
+				}
+				for(var i = 1; i < 5; i++) {
+					if(i == nowShow) {
+						document.getElementById("img" + nowShow).style.display = "";
+					} else {
+						document.getElementById("img" + i).style.display = "none";
+					}
+				}
+				if(nowShow == 4) {
+					nowShow = 1;
+				} else {
+					nowShow++;
+				}
+				var sid = setTimeout("showT()", 1500);
+			}
+		</script>
+
+	</head>
+
+	<body style="background: url(img/pp/home_bg.jpg) no-repeat;background-attachment:fixed;" onload="showT()">
+		<div class="container">
+			<div id="desktop">
+				<nav id="topContent">
+					<div id="logo">
+						<a href="#"><img src="img/ii/logob.png" /></a>
+					</div>
+					<div id="game">
+						<a href="#">游戏</a>
+					</div>
+					<div id="store">
+						<a href="#">商城</a>
+					</div>
+					<div id="news">
+						<a href="#">新闻</a>
+					</div>
+					<div id="e-sport">
+						<a href="#">电子竞技</a>
+					</div>
+					<div id="account">
+						<div id="suport">
+							<a href="#">支持</a>
+						</div>
+						<div id="myAccount">
+							<a href="#">我的账户</a>
+						</div>
+					</div>
+				</nav>
+				<div class="logo"><a href="favourite.html"><img src="img/pp/heartstone.png"></a></div>
+			</div>
+		</div>
+		<div id="navWrap" style="top: 233px; position: absolute;">
+			<ul class="clearFix" id="nav">
+				<li class="nav1">
+					<a hidefocus="true" href="/home/"></a>
+				</li>
+				<li class="nav2">
+					<a hidefocus="true" href="/news?new" class="active"></a>
+					<ul>
+						<li>
+							<a href="/news?new#news">最新</a>
+						</li>
+						<li>
+							<a href="/news?blog#news">博文</a>
+						</li>
+						<li>
+							<a href="/news?match#news">赛事</a>
+						</li>
+						<li>
+							<a href="/news?events#news">活动</a>
+						</li>
+						<li>
+							<a href="/news?media#news">媒体</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav3">
+					<a hidefocus="true" href="/gameguide/"></a>
+					<ul>
+						<li>
+							<a href="/gameguide/#version">版本</a>
+						</li>
+						<li>
+							<a href="/gameguide/#basic">基础知识</a>
+						</li>
+						<li>
+							<a href="/gameguide/#event">炉石大事件</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav4">
+					<a hidefocus="true" href="/media/"></a>
+					<ul>
+						<li>
+							<a href="/media/#video">视频</a>
+						</li>
+						<li>
+							<a href="/media/#pictures">截图</a>
+						</li>
+						<li>
+							<a href="/media/#wallpaper">壁纸</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav5">
+					<a hidefocus="true" href="/cards/"></a>
+				</li>
+				<li class="nav6">
+					<a hidefocus="true" href="/download/"></a>
+				</li>
+				<li class="nav7">
+					<a hidefocus="true" href="javascript:;"></a>
+					<ul>
+						<li>
+							<a href="/standings/">积分排名</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav8">
+					<a hidefocus="true" href="http://bbs.hs.blizzard.cn/" target="_blank"></a>
+				</li>
+				<li class="sprite-left"></li>
+				<li class="sprite-right"></li>
+			</ul>
+		</div>
+		<div id="bgtop">
+			<img src="img/pp/con-bg-top.png" />
+		</div>
+		<div id="bgbody1">
+			<div id="cycle">
+				<img src="img/pp/1.jpg" id="img1" border="1" style="display: none;">
+				<img src="img/pp/2.jpg" id="img2" border="1" style="display: none;">
+				<img src="img/pp/3.jpg" id="img3" border="1" style="display: none;">
+				<img src="img/pp/4.jpg" id="img4" border="1" style="display: none;">
+			</div>
+			<!--<a href="javascript:showT(1)"  >1</a>
+		<a href="javascript:showT(2)"  >2</a>
+		<a href="javascript:showT(3)"  >3</a>
+		<a href="javascript:showT(4)"  >4</a>-->
+		</div>
+
+		</div>
+		<!--<div id="bgbody2">
+			<div id="part1">
+				
+			</div>
+			
+		</div>-->
+
+		<div class="newsWrap">
+			<div class="newsArea">
+				<div id="newsCon">
+					<h2 id="articleTitle">
+                                            
+                                                全新扩展包“砰砰计划”现已上线
+                                                    
+                                        </h2>
+					<div class="title_sub">
+						<span class="time">发布日期：2018-08-08</span>
+					</div>
+					<div class="news">
+
+						<p style="text-align: center;"><img alt="" class="imgborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/feb023d9bcf9a875f4846e461e559392.jpg"></p>
+
+						<p>“砰砰计划”正式启动！你可以购买奥术之尘并开启卡牌包啦！</p>
+
+						<p style="text-align: center;">
+							<a class="imgnoborder" href="https://shop.battlenet.com.cn/zh-cn/product/hearthstone-boomsday-project-cn" style="border: none; box-shadow: none;" target="_blank"><img alt="" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/b967be5cd289fd24af10d007b28ff298.png" style="border: medium none; box-shadow: none; margin-right: 2%;" title=""></a>
+						</p>
+
+						<p><strong>在限定时间内登录游戏即可免费获得来自“砰砰计划”的一张随机职业传说随从牌（或英雄牌），以及3包卡牌包！</strong></p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/78c23036c4870dcbf96f0777cd49d2fb.png"></p>
+
+						<p><strong>在</strong><strong>8月</strong><strong>22日</strong><strong>“谜题实验室</strong><strong>”开放之后登录游戏</strong><strong>，即可再次免费获得</strong><strong>3包</strong><strong>“砰砰计划</strong><strong>”卡牌包。</strong></p>
+
+						<p><span style="color:#233a6e;"><span style="font-size:16px;"><strong>“砰砰计划”</strong></span></span>
+						</p>
+
+						<p>在漂浮的虚空风暴群岛上，紫色闪电的包裹下隐藏着一座世界级的秘密设施——砰砰实验室。砰砰博士正是在这里构思出了伟大的“砰砰计划”。作为一名曾在52区工作的研究人员，砰砰博士凭借单枪匹马之力，在机械设计和灾难性快速拆卸领域成为了一颗冉冉升起的新星。</p>
+
+						<p>在成为同类领域中最顶尖的科学家后，砰砰博士决定是时候尝试些新挑战了。于是便有了“砰砰计划”的诞生——一项囊括各个学科的研究，其效果足以永久改变这个世界！时至今日，他的团队仍在致力于计划的细节工作……</p>
+
+						<p><span style="color:#233a6e;"><span style="font-size:16px;"><strong>震撼人心的科学！</strong></span></span>
+						</p>
+
+						<p>砰砰实验室骄傲地向世人展示有史以来最激动人心的发明：<strong>传说法术</strong>！每位研究人员都施展了他们的独有才华并设计出一个传说法术——对于所有九个职业来说，每一个传说法术可都是无与伦比的存在！</p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/d9734be61f7062fea755f07fdcdf2b24.png" style="width: 250px; height: 323px;">　　　<img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/c02d7962d5747e1d04721738345f0890.png" style="width: 250px; height: 323px;"></p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/d5bbb74af2db87309413228bc9e9ff94.png" style="width: 250px; height: 323px;"></p>
+
+						<p>传说法术那惊世骇俗的力量随着你的指尖不断闪现，“砰砰计划”很快就会完成——至于它到底是什么计划，谁在乎呢！</p>
+
+						<p><span style="color:#233a6e;"><span style="font-size:16px;"><strong>古怪的科学家！</strong></span></span>
+						</p>
+
+						<p>在这充满奇思妙想却又危机四伏的砰砰实验室中，你将遇到掌握尖端科学的最强大脑！他们是拥有古怪想法的科学家，其中包括气象学家、天文学家、生物学家、灵魂学家等等，还有他们的助手！他们是九个职业中的专家，其中还包括恶名昭著的砰砰博士本人。</p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/8ee030f992081a39ee636fdc5defdddf.png" style="width: 250px; ">　　　<img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/b9f2c4bac19c966b73d78ba9eb917975.png" style="width: 250px; "></p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/ed8426c6e8e7b5ab6358e0b3555f67f3.png" style="width: 250px; ">　　　<img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/c7fa3f7dfc882c02f8c41fd72fca002d.png" style="width: 250px; "></p>
+
+						<p>不过，他们并不都只是专精单一领域。研究设施里有各种各样的天才，其中某些人就是万事通……</p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/a7b9eab79c0c2ed0e7bdfe515ed78e72.png" style="width: 250px; "></p>
+
+						<p><span style="color:#233a6e;"><span style="font-size:16px;"><strong>不可思议的磁力</strong></span></span>
+						</p>
+
+						<p>在“砰砰计划”中，砰砰博士设计了各式各样的机械，而它们都拥有<strong>磁力</strong>属性！拥有这项新能力的机械可以和其它机械拼装在一起，从而执行更为艰难的任务！</p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/e40a6eede677c235c381da6d7887ebbe.png" style="width: 250px; ">　　　<img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/2c3a91435556de9d16086a90622711fc.png" style="width: 250px; "></p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/54501b41b5465690419a3ef7bd9521f0.png" style="width: 250px;"></p>
+
+						<p><span style="color:#233a6e;"><span style="font-size:16px;"><strong>互相帮助</strong></span></span>
+						</p>
+
+						<p>偶尔，你也会欢迎一些不太情愿的参与者来协助你那有条不絮的疯狂计划！本次扩展包会有全新的计划牌出现，它们对你和你的对手都会产生帮助。不过仍然只有一个人能赢得胜利，所以你还是需要仔细定夺你的所有行动。</p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/1c2d2aefc5918a6d6c7954b5051aa79f.png" style="width: 250px;"></p>
+
+						<p>为确保你的计划不受监管者的烦扰和好事者的干涉，砰砰博士已指派欧米茄小队负责砰砰实验室的防护任务。精英小队具备快速反应能力，但只有当专门设计的欧米茄发生器在10点法力水晶的作用下开足马力时，他们才能达到最佳状态。</p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/a53729efef4d06fa76febeb6742c3201.png" style="width: 250px;"></p>
+
+						<p><span style="color:#233a6e;"><span style="font-size:16px;"><strong>8月22日破解“谜题实验室”</strong></span></span>
+						</p>
+
+						<p>“砰砰计划”免费单人冒险——<strong>谜题实验室</strong>将在<strong>8月22日</strong>开放！运用你的过人智慧破解科学难题，分析斩杀、清场、镜像和生存四种令人困惑的谜题吧！</p>
+
+						<p>如果你有足够的实力解开砰砰实验室的每一道谜题，就可以把<strong>砰砰末日</strong>卡背图案加入你的收藏！</p>
+
+						<p style="text-align: center;"><img alt="" class="imgnoborder" src="http://hearthstone.nos.netease.com/a/images/2018/8/7/5ab87bc267454c0c03a384419d9bae1a.png" style="height: 366px; "></p>
+
+						<p>戴上护目镜，穿上白大褂，掌握科学的力量——以及“砰砰计划”的
+							<a href="http://hs.blizzard.cn/gameguide/cards/?cardset=the-boomsday-project" target="_blank">135张全新卡牌</a>！</p>
+
+						<p>听听他们的自述，了解砰砰实验室中极具个性的角色！</p>
+
+						<p style="text-align: center;">
+							<a href="http://hs.blizzard.cn/article/16/13592" target="_blank">实验室日志1</a>——
+							<a href="http://hs.blizzard.cn/article/16/13646" target="_blank">实验室日志2</a>——
+							<a href="http://hs.blizzard.cn/article/16/13709" target="_blank">实验室日志3</a>
+						</p>
+
+						<p>我们酒馆里见！</p>
+
+					</div>
+					<ul class="share clearFix bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1536254134913">
+						<li class="sharetip">分享到：</li>
+						<li>
+							<a class="bds_tsina bds_button_tsina" data-cmd="tsina" href="javascript:void(0)"></a>
+						</li>
+						<li>
+							<a class="bds_weixin  bds_button_weixin" data-cmd="weixin" href="javascript:void(0)"></a>
+						</li>
+						<li>
+							<a class="bds_tieba  bds_button_tieba" data-cmd="tieba" href="javascript:void(0)"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a id="commentsTag"></a>
+			<a id="commentsTagMy"></a>
+
+			<div id="commentsIframeWrap"> <img src="http://hearthstone.nos.netease.com/3/common/loading.gif" class="newsloading"></div>
+
+		</div>
+
+		<div class="bottom">
+			<!--<div class="bottomBg"><img src="img/footer.jpg"></div>-->
+			<div class="navfooter">
+				<div class="footer-logo"><img src="img/ii/logo_blizzard.png" /></div>
+				<div class="foot-link">
+					<div class="workchance">
+						<a href="#">工作机会</a>
+					</div>
+					<div class="workchance">
+						<a href="#">关于</a>
+					</div>
+					<div class="workchance">
+						<a href="#">支持</a>
+					</div>
+					<div class="workchance">
+						<a href="#">媒体中心</a>
+					</div>
+					<div class="workchance">
+						<a href="#">API</a>
+					</div>
+					<div class="workchance">
+						<a href="#">安全中心</a>
+					</div>
+				</div>
+				<div class="copyright">©2018暴雪娱乐有限公司版权所有。</div>
+				<div class="copyright">在此提及的其他所有商标是其各自所有人的财产。</div>
+
+				<div class="legal">
+					<div class="privacy">
+						<a href="#">隐私</a>
+					</div>
+					<div class="privacy">
+						<a href="#">法律条款</a>
+					</div>
+				</div>
+				<div class="legalmessage">
+					<div class="number">
+						<a href="#">沪网文〔2017〕9633-727号</a>
+					</div>
+					<div class="number">
+						<a href="#">增值电信业务经营许可证编号：沪B2－20080012</a>
+					</div>
+
+				</div>
+				<div class="additionalLegal">
+					<div class="addition">互联网违法和不良信息举报电话：0571-28090163</div>
+					<div class="addition">沪公网安备：31011502002167</div>
+				</div>
+				<div class="agetip">
+					<div class="age">
+						<a href="#">适龄提示：适合13岁及以上使用 家长监护工程</a>
+					</div>
+					<div class="age">
+						<a href="#">上海市网络游戏行业自律公约</a>
+					</div>
+				</div>
+				<div class="address">
+					<div class="addresscontent">上海市张江高科技园区碧波路690号5号楼301-A</div>
+					<div class="addresscontent">客服电话：0571-28090163</div>
+				</div>
+				<div class="legalPicture">
+					<a href="#"><img src="img/ii/cyberpolice.gif" /></a>
+					<a href="#"><img src="img/ii/zx100.gif" /></a>
+					<a href="#"><img src="img/ii/sgs.gif" /></a>
+					<a href="#"><img src="img/ii/shjbzx.gif" /></a>
+					<a href="#"><img src="img/ii/culture-logo-1.png" /></a>
+				</div>
+				<div class="addiction">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当</div>
+				<div class="addiction">适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
